@@ -38,28 +38,35 @@ const quizInfo = [
       correct: "a",
     },
   ];
-  // declare vars
+ // Declare variables to store references to HTML elements
 let question = document.getElementById("questions");
 let answerA = document.getElementById("first_text");
 let answerB = document.getElementById("second_text");
 let answerC = document.getElementById("third_text");
 let answerD = document.getElementById("fourth_text");
 let correctAnswer = document.getElementById("correct-answer");
+
+
+// When the window loads, display a welcome message in the answer choice elements
 window.onload = (event) => {
  answerA.innerText = 'Ready';
   answerB.innerText = 'To';
   answerC.innerText = 'Rumble';
   answerD.innerText = 'Chump?';
 };
-// declare radiobuttons
+// Declare variables to store references to the radio buttons and the user's score
 let radioA = document.getElementById("first");
 let radioB = document.getElementById("second");
 let radioC = document.getElementById("third");
 let radioD = document.getElementById("fourth");
 let score = 0;
+
+// Function to fill the HTML elements with the question and answer choices for a given question number
 function fillQuestion(number){
+   // Iterate through the quizInfo array and find the object with the specified ID
 quizInfo.forEach((element) => {
   if(element.id == number){
+     // Set the question and answer choice elements to the values in the object
     question.innerText = element.question;
     answerA.innerText = element.a;
     answerB.innerText = element.b;
@@ -68,10 +75,15 @@ quizInfo.forEach((element) => {
     correctAnswer.value = element.correct;
   }
 });
-  }
+};
+
+// Function to check the user's answer and update the score
 function getAnswer(){
+ // Function to fill the HTML elements with the question and answer choices for a given question number
 let questionNumber = form.dataset.value;
 questionNumber = questionNumber +1;
+
+ // Check if the current question is one of the predetermined questions and update the score accordingly
     if(form.dataset.value == 2){
       correctAnswer = 'b';
       if(radioB.checked){
