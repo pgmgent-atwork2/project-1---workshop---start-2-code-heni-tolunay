@@ -1,45 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Js Quiz Game</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Js Quiz Game</title>
 </head>
 <body>
-    <div class="container" id="quizcontainer">
-    <form action="" id="form" data-value="0">
-      <div class="quiz">
-        <div class="quests">
-          <h1 class="text" id="questions">Lets Start The Game</h1>
-          <ul>
-            <input type="hidden" name="correct-answer" id="correct-answer">
-            <li>
-              <input class="answer" type="radio" id="first" name="answer" >
-              <label for="1" id="first_text">Answer</label>
-            </li>
-            <li>
-              <input class="answer" type="radio" id="second" name="answer">
-              <label for="2" id="second_text">Answer</label>
-            </li>
-            <li>
-              <input class="answer" type="radio" id="third" name="answer">
-              <label for="3" id="third_text">Answer</label>
-            </li>
-            <li>
-              <input class="answer" type="radio" id="fourth" name="answer">
-              <label for="4" id="fourth_text">Answer</label>
-            </li>
-          </ul>
+    <a href="html/index.html">Ga naar het spel</a>
+    <div>
+        <h1 class="header">
+            We gaan hierbij zoveel mogelijk op de juiste antwoorden klikken.
+        </h1>
+        <div class="game_rules">
+            <h2>Duid de antwoorden in de onderstaande tabel in.</h2>
+            <ul>
+                <li>Vraag 1</li>
+                <li>Vraag 2</li>
+                <li>Vraag 3</li>
+                <li>Vraag 4</li>
+            </ul>
         </div>
-        <button id="submit" type="submit">Submit</button>
+        <div>
+            <h2>De regels zijn simpel</h2>
+            <ul>
+                <li>Correct antwoorden</li>
+                <li>Foutive antwoorden</li>
+                <li>Geen antwoorden</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Uitzicht van het game:</h2>
+            <div class="game_screen">
+                <p>Start</p>
+                <img class="img_game" src="assets/img/start_page.png" alt="start">
+            </div>
+            <div class="game_screen">
+                <p>Correct Antwoord</p>
+                <img class="img_game" src="assets/img/correct_answer.png" alt="correct">
+            </div>
+            <div class="game_screen">
+                <p>Foutive Antwoord</p>
+                <img class="img_game" src="assets/img/wrong_answer.png" alt="foutive">
+            </div>
+            <div class="game_screen">
+                <p>Geen Antwoord</p>
+                <img class="img_game" src="assets/img/no_answer.png" alt="start">
+            </div>
+        </div>
+
+        <div>
+            <h2>De talen die we gebruikt hebben om dit game te maken is:</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+        </div>
+
+        <div class="first_step">
+            <h2>Stap 1 - Mappen en Bestanden</h2>
+            <p>
+                We maken gebruik van de visual studio code.
+                <a class="link" target="_blank"href="https://code.visualstudio.com/">Visual Studio Code.</a>
+            </p>
+        </div>
+        <div class="first_step">
+            <h3>
+                - 1.1 Maak een nieuwe project map aan en geef die als volgt het game name.
+            </h3>
+            <p>Aanmaken van een map is simpel, dit is een keuze van de student/developer. In dit geval was het bij mij in bureaublad.</p>
+        </div>
+
+        <div class="first_step">
+            <h3>
+                - 1.2 Rechtsklik op de folder en je zal de optie "open with code"
+                zien, druk erop/erin slepen kan je ook doen naar de visual studio code.
+            </h3>
+            <img src="assets/img/lege_folder.png" alt="lege_folder">
+            <p>Maak de onderstaande folders aan en steek onderstaande files in.</p>
+            <img class="first_img" src="assets/img/structure.png" alt="map_structuur">
+        </div>  
+
+        <div class="first_step">
+            <h3>
+                - 1.3 Op de rechtermuisknop klikken en dan opstarten met liveserver.
+            </h3>
+            <p>Er zal zich een blanco web pagina verschijnen en deze is dan jouw pagina.</p>
+
+            <p><i><strong> Succes Met het volgen van deze tutorial </strong></i></p>
+        </div>  
+    </div>
+
+    <div class="second_step">
+        <h2>Stap 2 - HTML & CSS</h2>
+        <p>Deze talen worden gebruikt voor website's te bouwen en een vorm geven.</p>
+    </div>
+
+    <div class="first_step">
+        <h3>- 2.1 Kopieer de onderstaande code in jouw index.html bestand, bewaar dit bestand.</h3>
+        <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/1/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        <p>Zo gaan we van start.</p>
+        <p>Kopieer de onderstaande code in jouw main.css bestand, dit zal ervoor zorgen dat de structuur ook aanwezig is.</p>
+        <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/4/embedded/css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    </div>
+
+    <div class="first_step">
+        <h3>- 2.3 Bekijk het resultaat in de browser - in de url.</h3>
+        <p>Om de applicatie vorm te geven kun je deze onderstaande code
+            toevoegen aan de html.</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/5/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        <p><strong>De Resultaten</strong></p>
+        <p>De form en de title van de code moeten we ook toevoegen voor een betere look.</p>
+        <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/9/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        <p>Hierboven bevindt de Html code die je nodig hebt voor het spelletje</p>
+        <p>Bij het samenvoegen van html en de css krijg je dit te zien.</p>
+        <img class="first_img" src="assets/img/start_page.png" alt="quiz_game">
+        <p>Ik ben er bijna klaar met dit project/game, de kleuren combinatie heb ik uit koude kleuren gekozen. de informatie hebben we al, de structuur hebben we er ook bij geplaatst, nu nog de werking van deze code.</p>
+    </div>
+    <div class="third_step">
+        <h2>Stap 3 - IN JAVASCRIPT </h2>
+        <p>
+            De meeste zullen zich nog herinneren dat ze hun eerste code hebben geschreven in javascript.
+          </p>
+    </div>
+
+    <div class="third_step">
+        <h3>3.1 om te beginnen zullen we de waarden definieëren die we nodig hebben voor de connectie van de HTML & JS</h3>
+        <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/13/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+    <div>
+        <p>Door gebruik te maken van let resultaat = document.getElementById(‘questions’).</p>
+        <img class="first_img" src="assets/img/questions.png" alt="snippets">
+        <p>Declareer variabelen om verwijzingen naar HTML-elementen op te slaan, deze gaan we later opvragen.</p>
+        <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/16/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div>
+        <h3>3.2 Wanneer het venster wordt geladen, geeft u een welkomstbericht weer in de antwoordkeuze-elementen </h3>
+        <p>Deze functie wordt uitgevoerd wanneer de pagina wordt geladen.</p>
+        <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/24/embedded/js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    </div>
+
+    <div>
+        <h3>3.3 Functie om de HTML-elementen te vullen met de vraag- en antwoordkeuzes voor een bepaald vraagnummer.
+            Doorloop de quizInfo-array en zoek het object met de opgegeven ID.
+            Stel de vraag- en antwoordkeuze-elementen in op de waarden in het object.</h3>
+        <p></p>
+        <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/26/embedded/js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    </div>
+
+    <div>
+        <h3>3.4 We gaan nu de vragen en antwoorden toevoegen.</h3>
+        <p>De vragen en antwoorden worden toegevoegd in de vorm van een array.</p>
+        <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/22/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    </div>
+
+    <div class="first_step">
+        <h4>- 3.5 Resultaat Javascript</h4>
+        <p>
+          Indien je alle stappen aandachtig hebt gevolgd dan moet je volledige
+          resultaat als volgt uitzien.
+        </p>
+        <iframe width="100%" height="300" src="//jsfiddle.net/toly17/yau3hecz/21/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
       </div>
-    </form>
-  </div>
-    <script src="javascript/main.js"></script>
+
+      <div class="first_step">
+        <h2>Dit is de resultaat/de uitzicht van het spel</h2>
+        <ul>
+            <li>
+                <img class="first_img" src="assets/img/start_page.png" alt="start">
+            </li>
+            <li>
+                <img class="first_img" src="assets/img/correct_answer.png" alt="correct">
+            </li>
+            <li>
+                <img class="first_img" src="assets/img/wrong_answer.png" alt="wrong">
+            </li>
+            <li>
+                <img class="first_img" src="assets/img/final_text.png" alt="end">
+            </li>
+        </ul>
+    </div>
+    </div>
 </body>
 </html>
-
-
-
